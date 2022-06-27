@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Регистрация</title>
+        <link rel="stylesheet" href="CSS/stylereg.css">
+    </head>
+    <body>
+        <div id="range5">  
+            <div class="outer">
+                <div class="middle">
+                    <div class="inner">
+                        <div class="login-wr">
+                            <div class="form">  
+                                <form action="validation/check.php" method="POST">
+                                    <input  class="input1" type="text" name="firstname" id="firstname" placeholder="Ваше имя" required>
+                            
+                                    <input  class="input1" type="text" name="lastname" id="lastname" placeholder="Ваша фамилия" required>
+                                    
+                                    <input  class="input1" type="text" name="patronymic" id="patronymic" placeholder="Ваше отчество"><br>
+                                    <label>Дата рождения</label>
+                                    <input  class="input" type="date" name="date" id="date" placeholder="Ваша дата рождения" required>
+                                
+                                    <input  class="input" type="email" name="email" id="email" placeholder="Ваше E-mail" pattern="{1,}@{1,}" required>
+                                
+                                    <input  class="input2" type="text" name="tel" id="tel" placeholder="Ваш номер телефона +7" value="+7" required>
+                                
+                                    <input  class="input" type="password" name="password" id="password" placeholder="Придумайте пароль" required>
+                                
+                                    <input  class="input" type="password" name="password_confirm" placeholder="Подтвердите пароль" required>
+
+                                    <input  class="input1" type="text" name="city" id="city" placeholder="Город" required>
+
+                                    
+                                    <select  class="select" name="status" id="status" placeholder="Статус">
+                                        <option>Статус</option>
+                                        <option>Школьник</option>
+                                        <option>Студент СПО</option>
+                                        <option>Студент ВУЗа</option>
+                                        <option>Закончил</option>
+                                    </select>
+                                    <br>
+                                
+                                    <label class="label">Данные паспорта:</label>
+                                    <input class="input1" type="text" name="ser" id="ser" placeholder="Серия" pattern="[0-9]{4}" required>
+
+                                    <input class="input1" type="text" name="nom" id="nom" placeholder="Номер" pattern="[0-9]{6}" required>
+
+                                    <input class="input1" type="text" name="org" id="org" placeholder="Кем выдан" required><br>
+
+                                    <label>Дата выдачи паспорта</label>
+                                    <input class="input" type="date" name="datepass" id="datepass" placeholder="Дата выдачи" required>
+                                
+                                    <label>СНИЛС:</label>
+                                    <input class="input1" type="text" name="snils" id="snils" placeholder="000-000-000 00" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3} [0-9]{2}">
+                                
+                                    <button class="btn" type="submit" >Зарегистрироваться</button>
+                                </form>
+                                <label>Уже зарегистрированы?</label>
+                                <a href="login.html"><button class="btn">Войти</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

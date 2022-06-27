@@ -1,0 +1,317 @@
+.grid * {
+    box-sizing: border-box;
+}
+.grid {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0px;
+    row-gap: 30px;
+    width: 100%;
+    height: 350px;
+}
+
+.grid-item {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
+    transition: box-shadow .3s;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.grid-item .image {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.grid-item .info {
+    position: relative;
+    height: calc(100% - 200px);
+    padding: 16px 14px 80px 14px;
+}
+.grid-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+}
+.grid-item .image img  {
+    transition: transform 280ms ease-in-out;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.grid-item:hover .image img  {
+    transform: scale(1.1);
+}
+
+.info h2 {
+    font-family: 'Roboto', Тahoma, sans-serif;
+    color:#e7e1e1;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+}
+
+.grid-item .button-wrap {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    text-align: center;
+}
+/* Кнопка подробнее */
+.atuin-btn {
+    display: inline-flex;
+    margin: 10px;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px 30px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase; 
+    font-family: 'Roboto', Тahoma, sans-serif;
+    background: #235a8a;
+    cursor: pointer; 
+    border: 2px solid #BFE2FF;
+    transition: transform 0.2s ease-out, padding 0.2s ease-out;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.atuin-btn:hover,
+.atuin-btn:active,
+.atuin-btn:focus {
+    color: #FFF;
+    transform: rotate(-2deg);
+    padding: 12px 50px 12px 10px;
+}
+.atuin-btn:before {
+    content: "\27A4";
+    position: absolute;
+    right: -30px;
+    color: #1C4B73;  
+    transition: right 0.5s cubic-bezier(.97,.01,.97,.55);
+}
+.atuin-btn:hover:before,
+.atuin-btn:active:before,
+.atuin-btn:focus:before {
+    right: 10px;
+}
+
+.image{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.content{
+    margin: 0 15%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.content p{
+    margin: 8px;
+    font-weight: bold;
+}
+
+.inf{
+  position: absolute;
+  margin-left: 8%;
+  font-size: 28px;
+  color:#e7e1e1
+}
+
+.inf p{
+    font-size: 30px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* .inf h2{
+  margin: auto;
+} */
+
+input[type='file'] {
+    display: block;
+    margin: 10px auto;
+    font-size: 22px;
+    border-radius: 6px;
+    color: transparent;
+    margin-left: 65px;
+}
+
+button[type="submit"] {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 22px;
+    border-radius: 6px;
+}
+
+.btn {
+    width: 260px;
+    font: inherit;
+    font-weight: bolder;
+    padding: 10px;
+    font-size: 15px;
+    background:transparent;
+    border-color:#e7e1e1;
+    border-radius: 8px;
+    border: 4px solid #e7e1e1;
+    margin: 0;
+}
+
+.btn a {
+    color:#e7e1e1;
+    text-decoration: none;
+}
+
+.edit_btn{
+    outline: none; /* Для синий ободки */
+    border: 0;
+    background:transparent;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.editt_btn{
+    width: 25px;
+    height: 25px;
+    float: left;
+    padding-top: 3.5%;
+    margin-left: 10px;
+}
+
+.editt_btn img{
+    width: 30px;
+    height: 30px;
+}
+
+.edittt {
+    margin: 0;
+    float: left;
+}
+
+.edittt h2 {
+    margin: 0;
+}
+
+.stage{
+    position: absolute;
+    right: 0;
+    width: 69%;
+}
+
+.stage_adm button{
+    border-radius: 8px;
+    width: 150px;
+    height: 50px;
+}
+
+.stage_type{
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    float: left;
+    margin-left: 80px;
+
+
+}
+
+.stage_inp{
+    width: 158px;
+    height: 25px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.stage_q{
+    width: 160px;
+    height: 30px;
+}
+
+.stage_adm {
+    height: 15%;
+    border-radius: 15px;
+    margin-left: 7%;
+}
+
+.stage_btn{
+    width: 100px;
+    display: block;
+    border-radius:15px;
+
+}
+
+.stage_name2{
+    display: flex;
+    align-items: center;
+    padding: 0.3%;
+}
+
+.stage_name1{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0.3%;
+    margin: 0 auto;
+    height: 120px;
+    text-align: center;
+}
+
+.stage_name{
+    /* width: 400px; */
+    margin: 0 auto;
+    color:#e7e1e1;
+    font-size: 25px;
+}
+
+.stage_name a{
+    text-decoration: none;
+    color:black;
+    font-size: 25px;
+}
+
+input[type='text'] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.stage_inp1{
+    width: 158px;
+    height: 25px;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    vertical-align: bottom;
+}
+
+
+.btn12 {
+    width: 260px;
+    font: inherit;
+    font-weight: bolder;
+    padding: 10px;
+    font-size: 15px;
+    background:transparent;
+    border-color:#e7e1e1;
+    border-radius: 8px;
+    border: 4px solid #e7e1e1;
+    margin-left: 25%;
+}
+
+.btn12 a {
+    color:#e7e1e1;
+    text-decoration: none;
+    display: block;
+}
+.btn123{
+    justify-content: space-between;
+}
